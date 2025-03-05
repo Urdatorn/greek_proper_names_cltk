@@ -1,8 +1,11 @@
-# About
-The file `proper_names.txt` contains a newline-delimited file which contains all of the words in the TLG which are likely proper names (persons, places, etc.). The value of this list is that, since everything is a noun, it may be used as a default POS tagger for these unusual words. The file `build_proper_names_list.py` shows how this file was made. `proper_names.txt` contains 144,051 unique.
+# grc proper names
 
-Important note: This list probably contains some words that are not proper nouns. Its needs to be edited by a human to remove accidental inclusions.
+---
+## Original project: https://github.com/cltk/greek_proper_names_cltk
+---
 
+# Updates
 
-# License
-Copyright (c) 2014 Kyle P. Johnson, under the MIT License. See 'LICENSE' for details.
+- Normalizing grc orthography:
+  - names on vowels lacking spiritus have gotten lenis
+- Converted to a Python set (avoiding duplicates and speeding up imports)
